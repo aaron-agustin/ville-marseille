@@ -1,0 +1,249 @@
+body {
+  font-family: "Inter", sans-serif; /* Choix de la police de caractères */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Box-sizing pour inclure la bordure et le rembourrage dans la largeur/hauteur */
+}
+/* CSS NAV BAR DROPLIST */
+
+.menu_bar {
+  background-color: #59a7f5d8;
+  height: 70px;
+  width: 90%;
+  padding: 0 5%;
+}
+
+.logo {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.logo span {
+  color: #141d28;
+}
+
+.menu_bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu_bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu_bar ul li a {
+  color: rgb(70, 49, 49);
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+  color: #2193b0;
+}
+
+.dropdown_menu {
+  display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #3a83ccd8;
+}
+
+.dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+/* FIN */
+
+/* CSS PAGE */
+header {
+  background-color: #21caaee1; /* Couleur de fond de l'en-tête */
+  color: #fff; /* Couleur du texte de l'en-tête */
+  text-align: center;
+  padding: 10px;
+}
+
+.logotype {
+  top: 0; /* Place le logo tout en haut de la fenêtre */
+  left: 0; /* Place le logo tout à gauche de la fenêtre */
+  margin: 10px; /* Ajoute une marge de 10 pixels pour l'espace autour du logo (ajustez selon vos besoins) */
+}
+
+#main-content {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px; /* Marge inférieure entre les articles */
+}
+
+.button_link {
+  color: #9546b9;
+}
+
+footer {
+  background-color: #333; /* Couleur de fond du pied de page */
+  color: #fff; /* Couleur du texte du pied de page */
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* page randonnée */
+
+/* Section de randonnées */
+#randonnees {
+  margin-top: 30px;
+}
+
+/* Style de chaque randonnée */
+.randonnee {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de l'image de la randonnée */
+.randonnee img {
+  width: 20%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style du contenu de la randonnée */
+/* Réinitialisation des styles par défaut du navigateur */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles de base */
+body {
+  font-family: "Inter", sans-serif; /* Utilisation de la police Inter pour le texte */
+  line-height: 1.6; /* Espacement des lignes du texte */
+  color: #333; /* Couleur du texte principale */
+  background-color: #f8f8f8; /* Couleur de fond générale de la page */
+}
+
+/* En-tête */
+header {
+  background-color: #59a7f5; /* Couleur de fond de l'en-tête */
+  color: #ecf0f1; /* Couleur du texte de l'en-tête */
+  text-align: center; /* Centrage du texte dans l'en-tête */
+  padding: 20px; /* Espace intérieur de l'en-tête */
+}
+
+.logotype img {
+  max-width: 100px; /* Largeur maximale du logo */
+  height: auto; /* Hauteur automatique pour maintenir les proportions du logo */
+}
+
+h1 {
+  font-size: 2em; /* Taille de police pour le titre principal */
+  margin-top: 10px; /* Marge supérieure du titre principal */
+}
+
+p {
+  font-size: 1.2em; /* Taille de police pour les paragraphes */
+}
+
+/* Barre de navigation */
+nav {
+  background-color: #3a7abb; /* Couleur de fond de la barre de navigation */
+}
+
+ul {
+  list-style: none; /* Suppression des puces de la liste */
+  display: flex; /* Utilisation de la mise en page flexbox pour la liste */
+  justify-content: center; /* Centrage des éléments de la liste horizontalement */
+  padding: 10px; /* Espace intérieur de la liste */
+}
+
+li {
+  margin: 0 15px; /* Marge entre les éléments de la liste */
+}
+
+a {
+  text-decoration: none; /* Suppression du soulignement des liens */
+  color: #ecf0f1; /* Couleur du texte des liens */
+  font-weight: bold; /* Texte en gras pour les liens */
+  font-size: 1.2em; /* Taille de police pour les liens */
+  transition: color 0.3s; /* Effet de transition pour le changement de couleur des liens */
+}
+
+a:hover {
+  color: #3498db; /* Couleur des liens au survol */
+}
+
+/* Section de randonnées */
+#randonnees {
+  padding: 30px; /* Espace intérieur de la section de randonnées */
+}
+
+h2 {
+  color: #2c3e50; /* Couleur du texte pour les titres de section */
+  margin-bottom: 20px; /* Marge inférieure pour les titres de section */
+}
+
+.randonnee {
+  margin-bottom: 40px; /* Marge inférieure pour chaque élément de randonnée */
+}
+
+.randonnee img {
+  max-width: 100%; /* Image avec une largeur maximale de 100% du conteneur parent */
+  height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
+  border-radius: 8px; /* Coins arrondis pour les images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour les images */
+}
+
+h3 {
+  color: #3498db; /* Couleur du texte pour les sous-titres de randonnée */
+  margin: 15px 0; /* Marge autour des sous-titres de randonnée */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px; /* Ajustement de l'espace intérieur de l'en-tête pour les écrans plus petits */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Ajustement de la taille de police du titre principal pour les écrans plus petits */
+  }
+
+  p {
+    font-size: 1em; /* Ajustement de la taille de police des paragraphes pour les écrans plus petits */
+  }
+
+  ul {
+    flex-direction: column; /* Modification de la direction de la liste pour une disposition verticale */
+    align-items: center; /* Centrage des éléments de la liste verticalement */
+  }
+
+  li {
+    margin: 10px 0; /* Marge entre les éléments de la liste pour une disposition verticale */
+  }
+}
