@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Contact </title>
+    <link rel="stylesheet" href="marseille6.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu_bar">
+                <h1 class="logo">Marseille<span>Website.</span></h1>
+        
+                <ul>
+                    <li><a href="marseille.html">Accueil</a></li>
+                    <li><a href="marseille1.html">Histoire <i class="fa-solid fa-book"></i></a></li>
+                    <li><a href="marseille6.html">Contact <i class="fa-solid fa-address-book"></i></a></li>
+                    <li><a href="#">Loisirs <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="marseille2.html">Randonnées <i class="fa-solid fa-person-hiking"></i></a></li>
+                            <li><a href="marseille3.html">Les Plages <i class="fa-solid fa-umbrella-beach"></i></a></li>
+                            <li><a href="marseille4.html">Parcs publics <i class="fa-solid fa-tree"></i></a></li>
+                            <li><a href="marseille5.html">Musées <i class="fa-solid fa-building-columns"></i></a></li>
+        
+                        </ul>
+                    </div>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="Contact">
+        <h1>Contactez-nous</h1>
+
+        <form action="traitement.php" method="post">
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite">
+                <option value="Monsieur">Monsieur</option>
+                <option value="Madame">Madame</option>
+            </select>
+            <br>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="adresse">Adresse Postale  :</label>
+            <input type="adresse" id="adresse" name="adresse" required>
+            <br>
+
+            <label for="sujet">Sujet de la demande :</label>
+            <textarea id="text" name="sujet" rows="4" cols="50" required></textarea>
+            <br>
+
+            <input type="checkbox" id="confidentialite" name="confidentialite" required>
+            <label for="confidentialite">J'accepte les politiques de confidentialité de l'entreprise</label>
+            <br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>

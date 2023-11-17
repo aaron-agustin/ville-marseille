@@ -1,0 +1,154 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    text-align: right;
+    background-color: #cbe7f7;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 80px; /* Espace entre les liens (ajustez selon vos préférences) */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    color: #000000; /* Couleur du texte (ajustez selon vos préférences) */
+}
+.menu_bar {
+    background: linear-gradient(#2193b0, #6dd5ed);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.logo span {
+    color: #141d28;
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+
+}
+
+.menu_bar ul li a:hover {
+    color: #2193b0;
+
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: linear-gradient(#2193b0, #6dd5ed);
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche avec opacité */
+    z-index: -1; /* Pour placer l'overlay derrière le contenu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #989494;
+    background-image: url(Image/Plage\ 1.jpeg) ;
+    background-size: cover; /* Ajuste la taille de l'image pour remplir l'ensemble de l'arrière-plan */
+    background-repeat: no-repeat; 
+    background-position: center; /* Ajustez selon vos préférences */
+  
+}
+
+.plage {
+    display: flex; /* Ajoutez cette ligne pour activer le modèle de boîte flexible */
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 48%;
+    margin: 1% ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 4% 0.5%;
+}
+
+
+.description {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #040404;
+    margin-top: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
